@@ -70,7 +70,7 @@ def process(image) :
 
     return new_image
 
-# try it out on a test image
+# try it out on dante.png
 image = Image.open('dante.png')
 new_image = process(image)
 
