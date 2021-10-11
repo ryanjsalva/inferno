@@ -26,4 +26,4 @@ run apt-get update -y \
 run pip3 install pytesseract
 run pip3 install google-cloud-translate==2.0.1
 run pip3 install google-cloud-datastore
-env GOOGLE_APPLICATION_CREDENTIALS='.devcontainer/creds.json'
+env GOOGLE_APPLICATION_CREDENTIALS='tmp/gc_creds.json'
