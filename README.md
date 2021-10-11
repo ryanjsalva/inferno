@@ -47,7 +47,7 @@ def translate_text(text) :
 ```
 
 7. Juxtapose the original image and translated text side-by-side
-///
+```
 def juxtapose(image,text) :
     """create a new image with the original image on the left and the text on the right
     Make the new image twice the width of the original, but the same height.
@@ -55,8 +55,10 @@ def juxtapose(image,text) :
 ```
 
 8. Bring it all together
+```
 def process(image) :
     """ process the image """
+```
 
 9. Try it out on a test image
 ```
