@@ -41,7 +41,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// In this case, we'll write credentials from the $INFERNO codespace secret to a temporary file
 	// where it can be accessed by the docker ENV variable.
-	"postCreateCommand": "printf '%s' \"$INFERNO\" > tmp/google_application_credentials.json",
+	"postCreateCommand": "printf '%s' \"$INFERNO\" > .devcontainer/google_application_credentials.json",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
