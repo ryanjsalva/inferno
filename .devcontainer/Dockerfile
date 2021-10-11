@@ -20,10 +20,10 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
-run apt-get update -y \
+RUN apt-get update -y \
     && apt-get install tesseract-ocr -y \
     && apt-get install tesseract-ocr-ita -y
-run pip3 install pytesseract
-run pip3 install google-cloud-translate==2.0.1
-run pip3 install google-cloud-datastore
-env GOOGLE_APPLICATION_CREDENTIALS='.devcontainer/creds.json'
+RUN pip3 install pytesseract
+RUN pip3 install google-cloud-translate==2.0.1
+RUN pip3 install google-cloud-datastore
+ENV GOOGLE_APPLICATION_CREDENTIALS='tmp/google_application_credentials.json'
