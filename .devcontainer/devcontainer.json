@@ -42,7 +42,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 
 	// postStartCommand for PIP?
-	"postCreateCommand": "echo $INFERNO_ALT > .devcontainer/creds.json",
+	"postCreateCommand": "printf '%s' \"$INFERNO_ALT\" > tmp/gc_creds.json",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
