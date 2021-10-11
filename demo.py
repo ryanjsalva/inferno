@@ -18,7 +18,7 @@ def get_text(image) :
 
     return text
 
-def translate_text(text) : 
+def translate_text(text) :
     """ translate italian to english """
     # translate text
     translate_client = translate_v2.Client()
