@@ -10,7 +10,7 @@ This simple app shows how a Python developer can get started using GitHub Codesp
     * Package dependencies (pytesseract, google-cloud-translate)
     * Environment variable for the Google Cloud service account
 3. `dante.png` shows the first page of Dante's Inferno in the original Italian 
-4. `demo.py' shows a completed version of the demo
+4. `demo.py` shows a completed version of the demo for reference, but you'll create our own file
 
 ## Pre-requisites
 Before running this app, you'll need to:
@@ -70,3 +70,6 @@ new_image = process(image)
 new_image.save('dante_translated.png')
 
 ```
+
+10. Run your app in the terminal by typing `python inferno.py`
+11. Look for `dante_translated.png` in the root directory
