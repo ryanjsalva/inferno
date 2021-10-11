@@ -62,5 +62,11 @@ def process(image) :
 
 9. Try it out on a test image
 ```
-# try it out on a test image
+# try it out on dante.png
+image = Image.open('dante.png')
+new_image = process(image)
+
+# save the image
+new_image.save('dante_translated.png')
+
 ```
