@@ -1,2 +1,2 @@
-tmp/
+.devcontainer/google_application_credentials.json
 dante_translated.png
