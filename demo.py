@@ -23,8 +23,6 @@ def translate_text(text) :
     # translate text
     translate_client = translate_v2.Client()
     translation = translate_client.translate(text, target_language='en')
-    print(translation)
-
     return translation['translatedText']
 
 # unit test for translate_text(text)
@@ -33,7 +31,6 @@ def test_translate_text() :
     text = 'ciao'
     translation = translate_text(text)
     assert translation == 'hello'
-
 
 def juxtapose(image,text) :
     """create a new image with the original image on the left and the text on the right
