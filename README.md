@@ -1,6 +1,13 @@
 # 🔥 Inferno
 
-This simple app shows how a Python developer can get started using GitHub Codespaces and Copilot. A few things to notice:
+This simple app shows how a Python developer can get started using GitHub Codespaces and Copilot. This demo will:
+
+1. Extract text from an image
+2. Translate from Italian to English
+3. Juxtapose the image and text
+
+## 🗺 Take a tour
+A few things to notice about the app:
 
 1. `.devcontainer.json` defines a custom devcontainer with:
     * Language dependencies (Python 3, Node LTS)
@@ -12,13 +19,13 @@ This simple app shows how a Python developer can get started using GitHub Codesp
 3. `dante.png` shows the first page of Dante's Inferno in the original Italian 
 4. `demo.py` shows a completed version of the demo for reference, but you'll create our own file
 
-## Pre-requisites
+## ✋ Pre-requisites
 Before running this app, you'll need to:
 
 1. Create a [Google Cloud service key in JSON format.](https://cloud.google.com/docs/authentication/production#cloud-console)
 2. Visit **Settings > Codespaces > Secrets > Create Secret** to create an `$INFERNO` secret with your Google Cloud service key.
 
-## Demo Steps
+## 🪜 Demo Steps
 
 1. Fork this repository into a GitHub Team or Enterprise account (required for Codespaces)
 2. Create a new Codespace by clicking **Code > Create Codespace**
