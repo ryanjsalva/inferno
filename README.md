@@ -17,7 +17,7 @@ A few things to notice about the app:
     * Package dependencies (pytesseract, google-cloud-translate)
     * Environment variable for the Google Cloud service account
 3. `dante.png` shows the first page of Dante's Inferno in the original Italian 
-4. `demo.py` shows a completed version of the demo for reference, but you'll create our own file
+4. `demo.py` shows a completed version of the demo for reference, but you'll create your own file, inferno.py
 
 ## ✋ Pre-requisites
 Before running this app, you'll need to:
