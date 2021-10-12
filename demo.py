@@ -1,5 +1,5 @@
 # import the image libraries
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 # convert image to text
 import pytesseract
 #  Google Cloud Translate package
@@ -43,13 +43,13 @@ def juxtapose(image,text) :
     new_image.paste(image, (0, 0))
 
     # get a font
-#    font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 30)
+    font = ImageFont.truetype('Roboto.ttf', 30)
 
     # get a drawing context
     draw = ImageDraw.Draw(new_image)
 
     # draw the text
-    draw.text((image.width+30, 0), text, fill='white')
+    draw.text((image.width+30, 0), text, font=font, fill='white')
 
     return new_image
 
