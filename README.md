@@ -82,4 +82,4 @@ new_image.save('dante_translated.png')
 11. Run your app in the terminal by typing `python inferno.py`
 12. Look for `dante_translated.png` in the root directory
 
-Credit: @oegerikus for the original idea
+Credit: @oegerikus for the original idea, @dynamicwebpaige for pairing with me
