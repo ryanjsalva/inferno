@@ -20,9 +20,10 @@ Before running this app, you'll need to:
 
 ## Demo Steps
 
-1. Create a new Codespace by clicking **Code > Create Codespace**
-2. Once the code editor is open, create a new file in the root directory called `inferno.py`
-3. In the editor, type the following code:
+1. Fork this repository into a GitHub Team or Enterprise account (required for Codespaces)
+2. Create a new Codespace by clicking **Code > Create Codespace**
+3. Once the code editor is open, create a new file in the root directory called `inferno.py`
+4. In the editor, type the following code:
 ```
 # import the image libraries
 from PIL import Image, ImageDraw
@@ -32,21 +33,21 @@ import pytesseract
 from google.cloud import translate_v2
 ```
 
-4. For the next several steps, try typing only the function name and see what happens. Try adding comments to see how it changes the suggestions. GitHub Copilot should be able to write the application for you with very little effort.
+5. For the next several steps, try typing only the function name and see what happens. Try adding comments to see how it changes the suggestions. GitHub Copilot should be able to write the application for you with very little effort.
 
-5. Use pytesseract to read text from the original image
+6. Use pytesseract to read text from the original image
 ```
 def get_text(image) :
     """ convert the image to text in Italian """
 ```
 
-6. Use Google Cloud Translate to translate the text to English
+7. Use Google Cloud Translate to translate the text to English
 ```
 def translate_text(text) :
     """ translate italian to english """
 ```
 
-7. Juxtapose the original image and translated text side-by-side
+8. Juxtapose the original image and translated text side-by-side
 ```
 def juxtapose(image,text) :
     """create a new image with the original image on the left and the text on the right
@@ -54,13 +55,13 @@ def juxtapose(image,text) :
     Display the text in white on a black background"""
 ```
 
-8. Bring it all together
+9. Bring it all together
 ```
 def process(image) :
     """ process the image """
 ```
 
-9. Try it out on a test image
+10. Try it out on a test image
 ```
 # try it out on dante.png
 image = Image.open('dante.png')
@@ -71,7 +72,7 @@ new_image.save('dante_translated.png')
 
 ```
 
-10. Run your app in the terminal by typing `python inferno.py`
-11. Look for `dante_translated.png` in the root directory
+11. Run your app in the terminal by typing `python inferno.py`
+12. Look for `dante_translated.png` in the root directory
 
 Credit: @oegerikus for the original idea
